@@ -76,7 +76,7 @@ if uploaded_file is not None:
             st.header("Most Busy Day")
             data = helper.week_activity(df,user_name)
             fig,ax = plt.subplots()
-            ax.bar(data["index"].values , data["day_name"].values,color = "green")
+            ax.bar(data["index"] , data["day_name"],color = "green")
             # ax.bar(data["index"] , data["day_name"],color = "green")
             plt.xlabel("Day")
             plt.ylabel("Frequency")
