@@ -136,15 +136,15 @@ if uploaded_file is not None:
 
 
         # emoji helper 
-        st.title("Emoji Filter")
-        data = helper.emoji_filter(df , user_name)
-        col1 ,col2 = st.columns(2)
-        with col1:
-            st.dataframe(data)
-        with col2:
-            fig, ax = plt.subplots()
-            ax.pie( data[1].head(), labels = data[0].head(),autopct="%0.2f")
-            st.pyplot(fig)
+        # st.title("Emoji Filter")
+        # data = helper.emoji_filter(df , user_name)
+        # col1 ,col2 = st.columns(2)
+        # with col1:
+        #     st.dataframe(data)
+        # with col2:
+        #     fig, ax = plt.subplots()
+        #     ax.pie( data[1].head(), labels = data[0].head(),autopct="%0.2f")
+        #     st.pyplot(fig)
     st.sidebar.title("Machine Learning")
     message = st.sidebar.text_input('Enter a message to check wheather it is urgent or not:')
     # # helper.add_bg_from_url()
