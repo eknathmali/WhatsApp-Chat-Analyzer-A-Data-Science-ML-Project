@@ -26,46 +26,46 @@ if uploaded_file is not None:
     if st.sidebar.button("Show Analysis "):
 
         # stast Area
-        # st.title("Top Statistics")
-        # total_msg, total_words,total_media,total_link = helper.stats(df,user_name)
-        # col1 ,col2,col3,col4 = st.columns(4)
-        # with col1:
-        #     st.header("Total Messages")
-        #     st.title(total_msg)
-        # with col2:
-        #     st.header("Total Words")
-        #     st.title(total_words)
-        # with col3:
-        #     st.header("Total Media")
-        #     st.title(total_media)
-        # with col4:
-        #     st.header("Links Shared")
-        #     st.title(total_link)
+        st.title("Top Statistics")
+        total_msg, total_words,total_media,total_link = helper.stats(df,user_name)
+        col1 ,col2,col3,col4 = st.columns(4)
+        with col1:
+            st.header("Total Messages")
+            st.title(total_msg)
+        with col2:
+            st.header("Total Words")
+            st.title(total_words)
+        with col3:
+            st.header("Total Media")
+            st.title(total_media)
+        with col4:
+            st.header("Links Shared")
+            st.title(total_link)
 
 
-        # # monthly timeline
-        # st.title("Monthly Timeline")
-        # data = helper.monthly_timeline(df ,user_name)
-        # fig,ax = plt.subplots()
+        # monthly timeline
+        st.title("Monthly Timeline")
+        data = helper.monthly_timeline(df ,user_name)
+        fig,ax = plt.subplots()
 
-        # # plt.plot(data["time"] , data["message"] ,color = "green")
-        # plt.plot(data["time"].values, data["message"].values, color="green")
-        # plt.xticks(rotation = 90)
-        # plt.ylabel("Number of Messages")
-        # plt.xlabel("Month")
-        # plt.figure(figsize=(15,5))
-        # st.pyplot(fig)
+        # plt.plot(data["time"] , data["message"] ,color = "green")
+        plt.plot(data["time"].values, data["message"].values, color="green")
+        plt.xticks(rotation = 90)
+        plt.ylabel("Number of Messages")
+        plt.xlabel("Month")
+        plt.figure(figsize=(15,5))
+        st.pyplot(fig)
 
-        # # daily timeline
-        # st.title("Daily Timeline")
-        # data = helper.daily_timeline(df ,user_name) 
-        # fig,ax = plt.subplots()
-        # plt.plot(data["only_date"].values , data["message"].values,color = "orange")
-        # # plt.plot(data["only_date"] , data["message"],color = "orange")
-        # plt.xlabel("Date")
-        # plt.ylabel("Messages Frequency")
-        # plt.xticks(rotation = 90)
-        # st.pyplot(fig)
+        # daily timeline
+        st.title("Daily Timeline")
+        data = helper.daily_timeline(df ,user_name) 
+        fig,ax = plt.subplots()
+        plt.plot(data["only_date"].values , data["message"].values,color = "orange")
+        # plt.plot(data["only_date"] , data["message"],color = "orange")
+        plt.xlabel("Date")
+        plt.ylabel("Messages Frequency")
+        plt.xticks(rotation = 90)
+        st.pyplot(fig)
 
         # # Week Activity
         st.title("Activity Map")
