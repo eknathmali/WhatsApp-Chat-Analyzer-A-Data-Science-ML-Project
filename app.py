@@ -14,7 +14,7 @@ if uploaded_file is not None:
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocessor(data)
 
-    st.dataframe(df)
+    # st.dataframe(df)
 
     #fetch unique user 
     user_list = df['User'].unique().tolist()
@@ -75,8 +75,8 @@ if uploaded_file is not None:
         with col1:
             st.header("Most Busy Day")
             data = helper.week_activity(df,user_name)
-            st.dataframe(data)
-            st.write(data.columns)
+            # st.dataframe(data)
+            # st.write(data.columns)
             fig,ax = plt.subplots()
             ax.bar(data["day_name"].values , data["count"].values,color = "green")
             # ax.bar(data["index"] , data["day_name"],color = "green")
@@ -96,11 +96,11 @@ if uploaded_file is not None:
             plt.xticks(rotation = 90)
             st.pyplot(fig)
 
-    #     st.title("Most Busy Hours")
-    #     fig,ax = plt.subplots()
-    #     hours_data = helper.hours_activity(df,user_name)
-    #     ax = sns.heatmap(hours_data)
-    #     st.pyplot(fig)
+        st.title("Most Busy Hours")
+        fig,ax = plt.subplots()
+        hours_data = helper.hours_activity(df,user_name)
+        ax = sns.heatmap(hours_data)
+        st.pyplot(fig)
         
     #     #finding busy users
     #     if user_name == "Overall":
