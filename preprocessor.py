@@ -39,6 +39,7 @@ def preprocessor(data):
     df["period"] =  period
     df.drop(columns= ["date"],inplace = True)
     df = df[df["message"] != "<Media omitted>\n"]
+    
     urgent = []
     with open("urgent.txt" , 'r') as f:
         text = f.read()
@@ -50,7 +51,6 @@ def preprocessor(data):
         for x in msg.lower().split():
             if x in text or x == 'love':
                 return "urgent"
-                break
         return "non-urgent"
     df["urgency"] = df["message"].apply(urgency)
     df = df.iloc[1:]
