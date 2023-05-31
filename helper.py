@@ -119,7 +119,10 @@ def daily_timeline(data,user):
 def week_activity(data,user):
     if(user != "Overall"):
         data =  data[data['User'] == user]
+        if("count" in data.columns):
+            data.rename(columns={'count': 'index'}, inplace=True)
     return data["day_name"].value_counts().reset_index()
+
 def month_activity(data,user):
     if(user != "Overall"):
         data =  data[data['User'] == user]
