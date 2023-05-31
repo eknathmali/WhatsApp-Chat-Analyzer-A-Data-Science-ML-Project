@@ -48,7 +48,8 @@ if uploaded_file is not None:
         data = helper.monthly_timeline(df ,user_name)
         fig,ax = plt.subplots()
 
-        plt.plot(data["time"] , data["message"] ,color = "green")
+        # plt.plot(data["time"] , data["message"] ,color = "green")
+        plt.plot(data["time"].values, data["message"].values, color="green")
         plt.xticks(rotation = 90)
         plt.ylabel("Number of Messages")
         plt.xlabel("Month")
