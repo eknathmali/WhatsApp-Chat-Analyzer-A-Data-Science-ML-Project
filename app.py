@@ -102,19 +102,19 @@ if uploaded_file is not None:
         ax = sns.heatmap(hours_data)
         st.pyplot(fig)
         
-    #     #finding busy users
-    #     if user_name == "Overall":
-    #         value,percetage_of_user = helper.busy_user(df)
-    #         st.title("Most Busy Users")
-    #         fig,ax = plt.subplots()
-    #         col1 , col2 = st.columns(2)
-    #         with col1:
-    #             g = sns.barplot(x = value.index  ,y = value.values)
-    #             plt.xticks(rotation= 90)
-    #             st.pyplot(fig)
-    #         with col2:
-    #                 df2 = pd.DataFrame({'User':percetage_of_user.index,'Percent':percetage_of_user.values})
-    #                 st.dataframe(df2)
+        #finding busy users
+        if user_name == "Overall":
+            value,percetage_of_user = helper.busy_user(df)
+            st.title("Most Busy Users")
+            fig,ax = plt.subplots()
+            col1 , col2 = st.columns(2)
+            with col1:
+                g = sns.barplot(x = value.index  ,y = value.values)
+                plt.xticks(rotation= 90)
+                st.pyplot(fig)
+            with col2:
+                    df2 = pd.DataFrame({'User':percetage_of_user.index,'Percent':percetage_of_user.values})
+                    st.dataframe(df2)
         
     #     st.title("WordCloud")  #wordcloud
     #     st.subheader("Most Used Words By :  ")
