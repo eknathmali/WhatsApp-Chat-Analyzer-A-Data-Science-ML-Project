@@ -125,42 +125,42 @@ if uploaded_file is not None:
         ax.imshow(df_wc)
         st.pyplot(fig)
 
-    #     # Most common words
-    #     st.title("Most Common Word")
-    #     new_Data = helper.most_common_word(df ,user_name)
-    #     # st.dataframe(new_Data)
-    #     fig,ax = plt.subplots()
-    #     sns.barplot(y = new_Data["Words"] , x = new_Data["Frequency"])
-    #     # plt.xticks(rotation = 90)
-    #     st.pyplot(fig)
+        # Most common words
+        st.title("Most Common Word")
+        new_Data = helper.most_common_word(df ,user_name)
+        # st.dataframe(new_Data)
+        fig,ax = plt.subplots()
+        sns.barplot(y = new_Data["Words"] , x = new_Data["Frequency"])
+        # plt.xticks(rotation = 90)
+        st.pyplot(fig)
 
 
-    #     # emoji helper 
-    #     st.title("Emoji Filter")
-    #     data = helper.emoji_filter(df , user_name)
-    #     col1 ,col2 = st.columns(2)
-    #     with col1:
-    #         st.dataframe(data)
-    #     with col2:
-    #         fig, ax = plt.subplots()
-    #         ax.pie( data[1].head(), labels = data[0].head(),autopct="%0.2f")
-    #         st.pyplot(fig)
-    # st.sidebar.title("Machine Learning")
-    # message = st.sidebar.text_input('Enter a message to check wheather it is urgent or not:')
-    # # # helper.add_bg_from_url()
-    # if message:
-    #     # st.write(message)
-    #     model,vectorizer = helper.logit_model(df , user_name)
-    #     message_features = vectorizer.transform([message])
-    #     prediction = model.predict(message_features.toarray())
-    #     new_Data = helper.most_common_word(df ,user_name)
+        # emoji helper 
+        st.title("Emoji Filter")
+        data = helper.emoji_filter(df , user_name)
+        col1 ,col2 = st.columns(2)
+        with col1:
+            st.dataframe(data)
+        with col2:
+            fig, ax = plt.subplots()
+            ax.pie( data[1].head(), labels = data[0].head(),autopct="%0.2f")
+            st.pyplot(fig)
+    st.sidebar.title("Machine Learning")
+    message = st.sidebar.text_input('Enter a message to check wheather it is urgent or not:')
+    # # helper.add_bg_from_url()
+    if message:
+        # st.write(message)
+        model,vectorizer = helper.logit_model(df , user_name)
+        message_features = vectorizer.transform([message])
+        prediction = model.predict(message_features.toarray())
+        new_Data = helper.most_common_word(df ,user_name)
 
-    #     st.header("Machine Learning")  #(message in list(new_Data["Words"].head()))
-    #     if ((prediction != 'non-urgent') or message in list(new_Data["Words"].head())) :
-    #             st.write("You Entered : " , message)
-    #             st.subheader("By analysing the Chats message thatyou have provided it seems that:")
-    #             st.write('Message is urgent.')
-    #     else:
-    #             st.write("You Entered : " , message)
-    #             st.subheader("By analysing the Chats message that you have provided it seems that:")
-    #             st.write("Message is not urgent.")
+        st.header("Machine Learning")  #(message in list(new_Data["Words"].head()))
+        if ((prediction != 'non-urgent') or message in list(new_Data["Words"].head())) :
+                st.write("You Entered : " , message)
+                st.subheader("By analysing the Chats message thatyou have provided it seems that:")
+                st.write('Message is urgent.')
+        else:
+                st.write("You Entered : " , message)
+                st.subheader("By analysing the Chats message that you have provided it seems that:")
+                st.write("Message is not urgent.")
