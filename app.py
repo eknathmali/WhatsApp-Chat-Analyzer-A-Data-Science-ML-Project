@@ -6,7 +6,7 @@ import seaborn as sns
 import time
 
 st.sidebar.title("Whatsapp Chat Analyzer")
-
+st.sidebar.markdown("Please download your WhatsApp chat in a text file and upload it here.")
 uploaded_file = st.sidebar. file_uploader("Choose a text file")
 if uploaded_file is not None:
  
