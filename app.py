@@ -116,14 +116,14 @@ if uploaded_file is not None:
                     df2 = pd.DataFrame({'User':percetage_of_user.index,'Percent':percetage_of_user.values})
                     st.dataframe(df2)
         
-        st.title("WordCloud")  #wordcloud
-        st.subheader("Most Used Words By :  ")
-        st.write(user_name)
-        df_wc = helper.create_word_cloud(df ,user_name)
-        fig,ax = plt.subplots()
-        plt.axis('off')
-        ax.imshow(df_wc)
-        st.pyplot(fig)
+        # st.title("WordCloud")  #wordcloud
+        # st.subheader("Most Used Words By :  ")
+        # st.write(user_name)
+        # df_wc = helper.create_word_cloud(df ,user_name)
+        # fig,ax = plt.subplots()
+        # plt.axis('off')
+        # ax.imshow(df_wc)
+        # st.pyplot(fig)
 
         # Most common words
         st.title("Most Common Word")
