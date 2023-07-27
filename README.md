@@ -38,7 +38,7 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 - 🔍 Check message urgency: Analyze the importance of any sentence or word
 
 <!-- Usage -->
-## Usage
+## Usage 🚀
 
 1. Export your WhatsApp chat and save the text file.
 
@@ -50,7 +50,9 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 
 5. Explore the various stats of your chat, individual contributions, and message urgency.
 <!-- Installation -->
-## Installation
+## Installation 🛠️
+
+To use the WhatsApp Chat Analyzer app locally, follow these steps:
 
 1. Clone the repository:
    ```bash
