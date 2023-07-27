@@ -1,6 +1,6 @@
 <!-- Title and Description -->
 <h1 align="center">
-  <img src="https://i.pinimg.com/736x/a7/6f/76/a76f76e72e019de27d86d96184a82d95.jpg" alt="WhatsApp Chat Analyzer" width="60" height = "60">
+  <img src="https://i.pinimg.com/736x/a7/6f/76/a76f76e72e019de27d86d96184a82d95.jpg" alt="WhatsApp Chat Analyzer" width="65" height = "65">
 
   WhatsApp Chat Analyzer App
 </h1>
