@@ -42,4 +42,4 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/your_repo_name.git
+   git clone https://github.com/eknathmali/WhatsApp-Chat-Analyzer-A-Data-Science-ML-Project.git
