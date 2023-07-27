@@ -16,9 +16,9 @@
  
 
 
-  <br>
+  
 
-  ![WhatsApp Chat Analyzer](wp.jpg)
+
 
 </div>
 
