@@ -15,10 +15,6 @@
   [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/release/python-3810/)
  
 
-  **[🚀 Demo](https://whatsappp-chat.streamlit.app/)** |
-  **[📖 Documentation](https://your_documentation_link)** |
-  **[🔑 API Reference](https://your_api_reference_link)** |
-  **[🐞 Report Bug](https://github.com/your_username/your_repo_name/issues)**
 
   <br>
 
