@@ -1,6 +1,6 @@
 <!-- Title and Description -->
 <h1 align="center">
-  <img src="your_logo_here.png" alt="Your App Name" width="400">
+  <img src="wp.jpg" alt="WhatsApp Chat Analyzer" width="400">WhatsApp Chat Analyzer
   <br>
   WhatsApp Chat Analyzer App
 </h1>
