@@ -32,7 +32,7 @@
 - [About](#about)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Usage](blob/master/Usage.md)
 - [Contributing](#contributing)
 - [License](#license)
 
