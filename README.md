@@ -13,7 +13,7 @@
 <div align="center">
 
   [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/release/python-3810/)
-  [![License](https://img.shields.io/github/license/eknathmali/WhatsApp-Chat-Analyzer-A-Data-Science-ML-Project)](LICENSE)
+ 
 
   **[🚀 Demo](https://whatsappp-chat.streamlit.app/)** |
   **[📖 Documentation](https://your_documentation_link)** |
