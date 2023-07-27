@@ -42,7 +42,7 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 
 1. Export your WhatsApp chat and save the text file.
 
-2. Open the [WhatsApp Chat Analyzer App](https://whatsappp-chat.streamlit.app/).
+2. Copy the link and paste it in another tab  https://whatsappp-chat.streamlit.app/.
 
 3. Click on the "Browse File" button and upload the downloaded text file.
 
