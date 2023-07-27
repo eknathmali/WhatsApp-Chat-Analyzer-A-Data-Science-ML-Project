@@ -13,7 +13,7 @@
 <div align="center">
 
   [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/release/python-3810/)
-  [![License](https://github.com/eknathmali/WhatsApp-Chat-Analyzer-A-Data-Science-ML-Project)](LICENSE)
+  [![License](https://img.shields.io/github/license/your_username/your_repo_name)](LICENSE)
 
   **[🚀 Demo](https://whatsappp-chat.streamlit.app/)** |
   **[📖 Documentation](https://your_documentation_link)** |
@@ -25,16 +25,6 @@
   ![WhatsApp Chat Analyzer](screenshot.png)
 
 </div>
-
-<!-- Table of Contents -->
-## Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 <!-- About -->
 ## About
@@ -57,4 +47,3 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 1. Clone the repository:
    ```bash
    git clone https://github.com/your_username/your_repo_name.git
-
