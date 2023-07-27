@@ -37,6 +37,18 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 - 🗂️ Individual analysis: Analyze specific users' contributions
 - 🔍 Check message urgency: Analyze the importance of any sentence or word
 
+<!-- Usage -->
+## Usage
+
+1. Export your WhatsApp chat and save the text file.
+
+2. Open the [WhatsApp Chat Analyzer App](https://whatsappp-chat.streamlit.app/).
+
+3. Click on the "Browse File" button and upload the downloaded text file.
+
+4. Select the analysis options and click on "Show Analysis" to view the insights.
+
+5. Explore the various stats of your chat, individual contributions, and message urgency.
 <!-- Installation -->
 ## Installation
 
