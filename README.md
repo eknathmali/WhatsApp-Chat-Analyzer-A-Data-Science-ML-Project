@@ -18,7 +18,7 @@
 
   <br>
 
-  ![WhatsApp Chat Analyzer](screenshot.png)
+  ![WhatsApp Chat Analyzer](wp.jpg)
 
 </div>
 
