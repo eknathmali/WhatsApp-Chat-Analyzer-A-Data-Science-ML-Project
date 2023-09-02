@@ -52,7 +52,7 @@ The WhatsApp Chat Analyzer is a user-friendly app that allows you to quickly ana
 <!-- Installation -->
 ## Installation 🛠️
 
-To use the WhatsApp Chat Analyzer app locally, follow these steps:
+To use the WhatsApp Chat Analyzer app locally,follow these steps:
 
 1. Clone the repository:
    ```bash
