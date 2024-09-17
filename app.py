@@ -72,18 +72,18 @@ if uploaded_file is not None:
         col1,col2 =st.columns(2)
         
 
-        with col1:
-            st.header("Most Busy Day")
-            data = helper.week_activity(df,user_name)
-            # st.dataframe(data)
-            # st.write(data.columns)
-            fig,ax = plt.subplots()
-            ax.bar(data["day_name"].values , data["count"].values,color = "green")
-            # ax.bar(data["index"] , data["day_name"],color = "green")
-            plt.xlabel("Day")
-            plt.ylabel("Frequency")
-            plt.xticks(rotation = 90)
-            st.pyplot(fig)
+        # with col1:
+        #     st.header("Most Busy Day")
+        #     data = helper.week_activity(df,user_name)
+        #     # st.dataframe(data)
+        #     # st.write(data.columns)
+        #     fig,ax = plt.subplots()
+        #     ax.bar(data["day_name"].values , data["count"].values,color = "green")
+        #     # ax.bar(data["index"] , data["day_name"],color = "green")
+        #     plt.xlabel("Day")
+        #     plt.ylabel("Frequency")
+        #     plt.xticks(rotation = 90)
+        #     st.pyplot(fig)
 
         with col2:
             st.header("Most Busy Month")
