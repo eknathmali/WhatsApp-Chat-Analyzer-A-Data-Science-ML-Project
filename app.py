@@ -85,16 +85,16 @@ if uploaded_file is not None:
         #     plt.xticks(rotation = 90)
         #     st.pyplot(fig)
 
-        with col2:
-            st.header("Most Busy Month")
-            data = helper.month_activity(df,user_name)
-            fig,ax = plt.subplots()
-            ax.bar(data["month"].values , data["count"].values,color = "green")
-            # ax.bar(data["index"] , data["month"],color = "green")
-            plt.xlabel("Month")
-            plt.ylabel("Frequency")
-            plt.xticks(rotation = 90)
-            st.pyplot(fig)
+        # with col2:
+        #     st.header("Most Busy Month")
+        #     data = helper.month_activity(df,user_name)
+        #     fig,ax = plt.subplots()
+        #     ax.bar(data["month"].values , data["count"].values,color = "green")
+        #     # ax.bar(data["index"] , data["month"],color = "green")
+        #     plt.xlabel("Month")
+        #     plt.ylabel("Frequency")
+        #     plt.xticks(rotation = 90)
+        #     st.pyplot(fig)
 
         st.title("Most Busy Hours")
         fig,ax = plt.subplots()
